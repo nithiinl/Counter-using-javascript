@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter- it will increase the count value</title>
+<style>
+    body{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 100px;
+        margin-top: 200px;
+        font-weight: 800;
+        font-size: x-large;
+        background-color: violet;
+    
+    
+    }
+    #count{
+        background-color:cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    #btn, #prev{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    #btn:hover, #prev:hover{
+        color: white;
+        background-color: darkblue;
+    }
+
+    #counter{
+        display: flex;
+        flex-direction: row;
+        font-size: 100px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #button #btn{
+        size: 100px;
+    }
+
+    #button{
+        display: flex;
+        align-content: center;
+        gap: 30px;
+        justify-content: space-between;
+        margin-top: 30px;
+
+    }
+
+    #heading{
+        text-decoration: underline;
+        color: white;
+    }
+
+   
+</style>
+</head>
+<body>
+    <h2 id="heading">Counter Using Javascript</h2>
+    <div id="count">
+        <p id="counter"></p>
+        <div id="button">
+            <button id="prev" onclick="decrement()">Back</button>
+            <button id="btn" onclick="increment()">Count</button>
+        </div>
+        
+    </div>
+<script src="counter.js"></script> 
+</body>
+</html>
